@@ -1,6 +1,6 @@
-var count = 0;
-
+import { useState } from "react";
 function Component0(){
-    return <button type = "button"> Clicked {count} times! </button>
+    const [count,setCount] = useState(0);
+    return <button type = "button" onClick={() => {setCount(count+1);console.log(count)}}> Clicked {count} times! </button>
 };
 export default Component0;
