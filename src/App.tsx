@@ -1,6 +1,7 @@
 import Message from "./components/Message";
 import Message2 from "./components/Message2";
 import Component0 from "./components/component0";
+import Component1 from "./components/component1";
 import ListGroup from "./components/ListGroup";
 import ComponentExample from "./components/ComponentExample";
 
@@ -12,6 +13,7 @@ function App(){
   
   
   return <div>
+    <Component1><h1>rocambole</h1></Component1>
     <Message/>
     <Message2/>
     <Component0/>
