@@ -1,98 +1,29 @@
 import Flexbox from './components/Flexbox'
-import CTAbutton from './components/CTAbutton'
 import BenefitsCard from './components/BenefitsCard'
-import { useState } from 'react'
+import AlertComponent from './components/AlertComponent'
 
 function App() {
-  const bonushead = ["1","2","3","4"]
-  const bonusbody = ["desc1","desc2","desc3","desc4"]
-  const [descr1,setdescr1] = useState(-1); 
+
   return (
     <>
       <div>
+        <AlertComponent>Oferta por tempo limitado</AlertComponent>
         <Flexbox> Mais internet, WhatsApp ilimitado e bônus para apps </Flexbox>
-        <CTAbutton> Assine já </CTAbutton>
+        <div className="row justify-content-evenly">
 
-        <div className="accordion" id="listaAccordion">
-          
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" onClick={()=> setdescr1(descr1 === 0 ? -1 : 0 )} data-bs-toggle="collapsed" data-bs-target="#desc1">
-                Item 1
-              </button>
-            </h2>
-            <div id="desc1" className={descr1===0 ? "accordion-collapse collapsed":"accordion-collapse collapse"} data-bs-parent="#listaAccordion">
-              <div className="accordion-body">
-                Descrição do item 1.
-              </div>
-            </div>
-          </div>
+          <BenefitsCard heading="15GB" hasButton buttonMessage='Assinar'> 
+          + 10GB Bonus livre
+          </BenefitsCard>
 
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" onClick={()=> setdescr1(descr1 === 1 ? -1 : 1)} data-bs-toggle="collapsed" data-bs-target="#desc2">
-                Item 2
-              </button>
-            </h2>
-            <div id="desc2" className={descr1===1 ? "accordion-collapse collapsed":"accordion-collapse collapse"} data-bs-parent="#listaAccordion">
-              <div className="accordion-body">
-                Descrição do item 2.
-              </div>
-            </div>
-          </div>
+          <BenefitsCard heading="20GB" hasButton buttonMessage='Assinar'> 
+          + 10GB Bonus livre
+          </BenefitsCard>
 
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" onClick={()=> setdescr1(descr1 === 2 ? -1 : 2)} data-bs-toggle="collapsed" data-bs-target="#desc3">
-                Item 3
-              </button>
-            </h2>
-            <div id="desc3" className={descr1===2 ? "accordion-collapse collapsed":"accordion-collapse collapse"} data-bs-parent="#listaAccordion">
-              <div className="accordion-body">
-                Descrição do item 3.
-              </div>
-            </div>
-          </div>
-
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" onClick={()=> setdescr1(descr1 === 3 ? -1 : 3 )} data-bs-toggle="collapsed" data-bs-target="#desc4">
-                Item 4
-              </button>
-            </h2>
-            <div id="desc4" className={descr1===3 ? "accordion-collapse collapsed":"accordion-collapse collapse"} data-bs-parent="#listaAccordion">
-              <div className="accordion-body">
-                Descrição do item 4.
-              </div>
-            </div>
-          </div>
-
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" onClick={()=> setdescr1(descr1 === 4 ? -1 : 4)} data-bs-toggle="collapsed" data-bs-target="#desc5">
-                Item 5
-              </button>
-            </h2>
-            <div id="desc5" className={descr1===4 ? "accordion-collapse collapsed":"accordion-collapse collapse"} data-bs-parent="#listaAccordion">
-              <div className="accordion-body">
-                Descrição do item 5.
-              </div>
-            </div>
-          </div>
-
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" onClick={()=> setdescr1(descr1 === 5 ? -1 : 5)} data-bs-toggle="collapsed" data-bs-target="#desc6">
-                Item 6
-              </button>
-            </h2>
-            <div id="desc6" className={descr1===5 ? "accordion-collapse collapsed":"accordion-collapse collapse"} data-bs-parent="#listaAccordion">
-              <div className="accordion-body">
-                Descrição do item 6.
-              </div>
-            </div>
-          </div>
-
+          <BenefitsCard heading="20GB" hasButton buttonMessage='Assinar'> 
+          + 10GB Bonus livre 
+          <br/>
+          Com Geforce NOW
+          </BenefitsCard>        
         </div>
 
         <div className="row justify-content-evenly">
@@ -111,8 +42,7 @@ function App() {
 
           <BenefitsCard heading="SMS ilimitado"> 
             Uso não comercial
-          </BenefitsCard> 
-        
+          </BenefitsCard>         
         </div>
         
       </div>
