@@ -32,7 +32,7 @@ function App() {
         </div>
         <div> <Flexbox> Mais internet, benefícios e bônus para apps </Flexbox> </div>
       
-        <img width="75%" height="auto" src="image.png" className="rounded" alt="..."/>
+        <img width="100%" height="263" src="image.png" className="img-rounded mx-auto d-block" alt="..."/>
 
 
         <div className="d-flex p-2">
