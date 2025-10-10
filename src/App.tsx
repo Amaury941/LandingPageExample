@@ -7,11 +7,11 @@ function App() {
     <>
       <div>
         <div className="d-flex p-2 flex-row-reverse text-bg-danger p-2">
-        <CTAbutton>
+        <CTAbutton type="warning">
           Saiba mais
         </CTAbutton>
 
-        <CTAbutton>
+        <CTAbutton type="danger">
           Contratar
         </CTAbutton>
         </div>
