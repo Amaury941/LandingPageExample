@@ -5,7 +5,7 @@ interface Prop {
 const Flexbox = ({children}: Prop) => {
   return (
     <div>
-      <h1 className="text-center p-3"> <strong>{children}</strong>  </h1>
+      <h1 className="text-center p-3 fs-1"> <strong>{children}</strong>  </h1>
     </div> 
 )}
 
